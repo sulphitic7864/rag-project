@@ -1,0 +1,157 @@
+/* src/components/ChatComponent.css */
+.app-container {
+  display: flex;
+  height: calc(100vh - 60px); /* Adjusted height to account for the header */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 40px;
+  padding: 20px 0;
+}
+
+.toggle-button {
+  background-color: #444444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.pdf-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pdf-list li {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #2b2b2b;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pdf-list li:hover {
+  background-color: #444444;
+}
+
+.pdf-list a {
+  color: #d1d1d1; /* Match the resource link color */
+  text-decoration: none;
+}
+
+.pdf-list a:hover {
+  color: #4caf50; /* Green for hover */
+  text-decoration: underline;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.chat-entry {
+  margin-bottom: 16px;
+  background-color: #383838;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.chat-form {
+  display: flex;
+  padding: 10px;
+  background-color: #333333;
+  border-top: 1px solid #444444;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  background-color: #444444;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+.send-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #45a049;
+}
+
+.resources {
+  margin-top: 10px;
+}
+
+.resources ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.loading {
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.resource-section {
+  margin-top: 10px;
+}
+
+.resource-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.toggle-resources {
+  background-color: transparent;
+  color: #4caf50;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 0;
+  text-align: left;
+}
+
+/* Link styles for better visibility on dark background */
+.resource-link {
+  color: #d1d1d1; /* Light gray for contrast */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.resource-link:hover {
+  color: #4caf50; /* Green for hover state */
+  text-decoration: underline; /* Subtle underline on hover */
+}
+
