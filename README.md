@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get 
+This template provides a minimal setup to get React 
 
 Currently, two official plugins are available:
 
